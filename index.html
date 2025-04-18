@@ -31,10 +31,14 @@
             </div>
         </div>
         <div class="file-upload">
-            <label for="imageUpload">Upload an image to initialize grid:</label>
-            <input type="file" id="imageUpload" accept="image/*">
-            <img id="imagePreview" src="" alt="Preview">
-        </div>
+    <label for="imageUpload">Upload an image to initialize grid:</label>
+    <div class="custom-file-upload">
+        <button type="button" id="customUploadBtn">Choose File</button>
+        <span id="fileName">No file chosen</span>
+        <input type="file" id="imageUpload" accept="image/*" style="display:none;">
+    </div>
+    <img id="imagePreview" src="" alt="Preview">
+</div>
         <button id="resetBtn">Random Reset</button>
         <button id="clearBtn">Clear Grid</button>
     </div>
